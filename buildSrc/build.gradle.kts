@@ -14,10 +14,12 @@ dependencies {
     implementation(libs.kgp)
     implementation(libs.agp)
 }
-compileOptions {
+android {
+    compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+}
     
 tasks.withType<KotlinCompile>().configureEach {
     kotlinOptions {
