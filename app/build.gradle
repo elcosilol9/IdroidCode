@@ -1,0 +1,114 @@
+plugins {
+id 'com.android.application'
+id 'org.jetbrains.kotlin.android'
+id 'kotlin-kapt'
+
+    }
+android {
+	namespace rootProject.ext.appnamespace
+    compileSdk rootProject.ext.compileSdk
+    
+
+
+    defaultConfig {
+        applicationId rootProject.ext.appId
+        minSdk rootProject.ext.minSdk
+        targetSdk rootProject.ext.targetSdk
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+		multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+
+	compileOptions {
+		coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+	
+	buildFeatures {
+        viewBinding = true
+    }
+    
+    lintOptions {
+        abortOnError false
+        disable "VectorPath",
+                "NestedWeights",
+                "ContentDescription",
+                "SmallSp"
+    }
+    
+	signingConfigs {
+
+        debug {
+            storeFile file("IdroidCode.jks")
+            keyAlias "IdroidCode"
+           	storePassword "9c294d1e618cc8bd280fd9c7685b52ac"
+            keyPassword "9c294d1e618cc8bd280fd9c7685b52ac"
+        }
+
+        release {
+            storeFile file("IdroidCode.jks")
+            keyAlias "IdroidCode"
+            storePassword "9c294d1e618cc8bd280fd9c7685b52ac"
+            keyPassword "9c294d1e618cc8bd280fd9c7685b52ac"
+        }
+    }
+	
+	
+	buildTypes {
+		debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled false
+			shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+
+//modules
+//implementation project(path: ':build-tools:project')
+implementation project(path: ':common')
+
+//libraries
+implementation 'com.google.android.material:material:1.7.0'
+implementation 'androidx.appcompat:appcompat:1.6.0-rc01'
+implementation 'androidx.activity:activity:1.5.0'
+implementation 'androidx.fragment:fragment:1.5.4'
+implementation 'androidx.core:core:1.9.0'
+implementation 'androidx.core:core-ktx:1.9.0'
+implementation 'androidx.preference:preference:1.2.0'
+implementation 'androidx.datastore:datastore:1.0.0'
+implementation 'androidx.databinding:viewbinding:7.2.0'
+implementation 'androidx.recyclerview:recyclerview:1.2.1'
+implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
+implementation 'androidx.drawerlayout:drawerlayout:1.1.1'
+implementation 'androidx.lifecycle:lifecycle-livedata:2.5.1'
+implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+implementation 'androidx.lifecycle:lifecycle-viewmodel:2.5.1'
+implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx: 2.5.1'
+implementation 'io.github.Rosemoe.sora-editor:editor:0.18.1'
+implementation 'io.github.Rosemoe.sora-editor:language-textmate:0.18.1'
+implementation 'io.github.Rosemoe.sora-editor:language-java:0.18.1'
+implementation 'commons-io:commons-io:2.11.0'
+implementation 'com.github.bumptech.glide:glide:4.12.0'
+implementation 'com.google.code.gson:gson:2.9.0'
+
+
+
+
+
+}

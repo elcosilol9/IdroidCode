@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Idroid Code</string>
+    <string name="resource">Recurso</string>
+    <string name="resource_manager">Administrador de recursos</string>
+    <string name="debug">Debug</string>
+    <string name="component_tree">Componentes</string>
+    <string name="raw_xml">Raw XML</string>
+     <string name="settings">Ajustes</string>
+    <string name="about">Acerca de</string>
+    <string name="ok">Ok</string>
+    <string name="run">Compilar</string>
+    <string name="mode">Modo</string>
+    <string name="design_surface">Capa de diseño</string>
+    <string name="view">Vista previa</string>
+    <string name="design">Diseño</string>
+    <string name="blueprint">Límite de diseño</string>
+    <string name="device_scope_format">La aplicación será compatible aproximadamente con %s de dispositivos android</string>
+    <string name="error_title">Ha ocurrido un error inesperado.\nLamentamos el inconveniente.</string>
+     <string name="mal_title_about">Acerca de</string>
+    <string name="mal_title_licenses">Licencias</string>
+
+    <string name="mal_close">Cerrar</string>
+    <string name="mal_send_email">Enviar email</string>
+
+    <string name="mal_activity_exception">No hay apps para ejecutar esta acción</string>
+    <string name="theme">Tema</string>
+
+      <string name="follow_system">Por defecto</string>
+
+    <string name="light_mode">Claro</string>
+
+    <string name="dark_mode">Oscuro</string>
+<string name="dynamic_theme">Tema dinámico</string>
+    <string name="dynamic_theme_desc">Aplica un tema creado en el esquema de color de su fondo de pantalla</string>
+     <string name="appearance">Apariencia</string>
+	<string name="create">Crear</string>
+    <string name="delete">Eliminar proyecto</string>
+    
+    <string name="about_desc">© 2022 Alexander Rotela</string>
+    <string name="about_version">Versión</string>
+    <string name="about_changelog_title">Registro de cambios</string>
+    <string name="about_license_title">Licencias de Código abierto</string>
+    <string name="about_author_title">Autor</string>
+    <string name="about_author_name">Alexander Rotela</string>
+    <string name="about_author_location">Paraguay</string>
+    <string name="about_social_title">Redes sociales</string>
+    <string name="about_facebook_label">Facebook</string>
+    <string name="about_instagram_label">Instagram</string>
+    <string name="about_twitter_label">Twitter</string>
+    <string name="about_telegram_label">Telegram</string>
+    <string name="about_support_title">Apoyar</string>
+    <string name="about_share_title">Compartir</string>
+    <string name="about_feedback_title">Enviar comentarios</string>
+    <string name="about_email_address">alexanderrotela2000@gmail.com</string>
+    <string name="about_more_apps_title">Más aplicaciones</string>
+    <string name="about_others">Otros</string>
+</resources>

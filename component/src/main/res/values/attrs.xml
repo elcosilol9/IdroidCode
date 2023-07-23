@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ColorPicker">
+        <attr name="arc_width" format="dimension" />
+        <attr name="stroke_width" format="dimension" />
+        <attr name="indicator_radius" format="dimension" />
+        <attr name="indicator_stroke_width" format="dimension" />
+        <attr name="indicator_stroke_color" format="color" />
+        <attr name="stroke_color" format="color" />
+        <attr name="arc_length" format="float" />
+        <attr name="radius_offset" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="HSLColorPicker">
+        <attr name="hue_arc_width" format="dimension" />
+        <attr name="saturation_arc_width" format="dimension" />
+        <attr name="lightness_arc_width" format="dimension" />
+
+        <attr name="hue_stroke_width" format="dimension" />
+        <attr name="saturation_stroke_width" format="dimension" />
+        <attr name="lightness_stroke_width" format="dimension" />
+
+        <attr name="hue_indicator_radius" format="dimension" />
+        <attr name="saturation_indicator_radius" format="dimension" />
+        <attr name="lightness_indicator_radius" format="dimension" />
+
+        <attr name="hue_indicator_stroke_width" format="dimension" />
+        <attr name="saturation_indicator_stroke_width" format="dimension" />
+        <attr name="lightness_indicator_stroke_width" format="dimension" />
+
+        <attr name="hue_indicator_stroke_color" format="color" />
+        <attr name="saturation_indicator_stroke_color" format="color" />
+        <attr name="lightness_indicator_stroke_color" format="color" />
+
+        <attr name="hue_stroke_color" format="color" />
+        <attr name="saturation_stroke_color" format="color" />
+        <attr name="lightness_stroke_color" format="color" />
+
+        <attr name="hue_start_angle" format="float" />
+        <attr name="saturation_start_angle" format="float" />
+        <attr name="lightness_start_angle" format="float" />
+
+        <attr name="hue_arc_length" format="float" />
+        <attr name="saturation_arc_length" format="float" />
+        <attr name="lightness_arc_length" format="float" />
+
+        <attr name="hue_radius_offset" format="dimension" />
+        <attr name="saturation_radius_offset" format="dimension" />
+        <attr name="lightness_radius_offset" format="dimension" />
+    </declare-styleable>
+
+   <declare-styleable name="BreadcrumbsView">
+		<attr name="crumbsTextColor" format="color"/>
+		<attr name="crumbsSelectedTextColor" format="color"/>
+		<attr name="crumbsTextSize" format="dimension"/>
+		<attr name="crumbsPadding" format="dimension"/>
+	</declare-styleable>
+    
+     <declare-styleable name="VectorMasterView">
+        <attr name="vector_src" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="EmptyView">
+        <attr name="message" format="string" />
+        <attr name="image" format="reference" />
+        <attr name="showImage" format="boolean" />  
+    </declare-styleable>
+    
+     
+</resources>

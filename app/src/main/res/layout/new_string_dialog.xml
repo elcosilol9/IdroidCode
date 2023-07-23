@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="8dp"
+              android:paddingLeft="24dp"
+              android:paddingRight="24dp"
+              android:paddingTop="16dp">
+ 
+
+    <EditText
+        android:id="@+id/name"
+        android:hint="Nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textShortMessage"
+        android:maxLines="1">
+  <requestFocus />
+  </EditText>
+    <EditText
+        android:id="@+id/value"
+        android:hint="Valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textShortMessage"
+          android:layout_marginTop="16dp"
+        android:maxLines="1">
+  <requestFocus />
+  </EditText>
+</LinearLayout>

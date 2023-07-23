@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="@dimen/cardlist_baseline_half"
+    android:paddingEnd="@dimen/cardlist_baseline"
+    android:paddingStart="@dimen/cardlist_baseline_half">
+
+    <ImageView
+        android:id="@+id/cl_title_icon"
+        android:layout_width="@dimen/cardlist_item_title_image_size"
+        android:layout_height="@dimen/cardlist_item_title_image_size"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/cardlist_baseline_half"
+        android:adjustViewBounds="false"
+        android:contentDescription="@null"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cl_title_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/cardlist_baseline_half"
+            android:textColor="?colorOnSurface"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            tools:text="App Name" />
+
+        <TextView
+            android:id="@+id/cl_title_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/cardlist_baseline_half"
+            android:textColor="?colorOnSurfaceVariant"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            tools:text="Copyright Me" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+[versions]
+agp = "8.0.2"
+
+androidx_test = "1.5.0"
+androidx_test_ext = "1.1.5"
+appcompat = "1.6.1"
+compile_sdk_version = "33"
+constraint_layout = "2.1.4"
+core_ktx = "1.10.1"
+detekt = "1.23.0"
+dokka = "1.8.20"
+espresso_core = "3.5.1"
+junit = "4.13.2"
+kotlin = "1.9.0"
+ktlint = "0.45.2"
+ktlint_gradle = "10.2.1"
+min_sdk_version = "26"
+r8 = "8.0.40"
+target_sdk_version = "33"
+benmanesversion = "0.47.0"
+
+[libraries]
+junit = { module = "junit:junit", version.ref = "junit" }
+androidx_appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+androidx_constraint_layout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraint.layout" }
+androidx_core_ktx = { module = "androidx.core:core-ktx", version.ref = "core.ktx" }
+androidx_test_rules = { module = "androidx.test:rules", version.ref = "androidx.test" }
+androidx_test_runner = { module = "androidx.test:runner", version.ref = "androidx.test" }
+androidx_test_ext_junit = { module = "androidx.test.ext:junit", version.ref = "androidx.test.ext" }
+androidx_test_ext_junit_ktx = { module = "androidx.test.ext:junit-ktx", version.ref = "androidx.test.ext" }
+detekt_formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
+espresso_core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso.core" }
+agp = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+kgp = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+dokka_gradle_plugin = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref = "dokka"}
+dokka_core = { module = "org.jetbrains.dokka:dokka-core", version.ref = "dokka"}
+r8 = { module = "com.android.tools:r8", version.ref = "r8" }
+
+[plugins]
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint.gradle" }
+versions = { id = "com.github.ben-manes.versions", version.ref = "benmanesversion" }

@@ -1,0 +1,49 @@
+plugins {
+id 'com.android.library'
+id 'org.jetbrains.kotlin.android'
+
+    }
+android {
+	namespace 'com.ardev.component'
+    compileSdk rootProject.ext.compileSdk
+    
+    
+    defaultConfig {
+        applicationId 'com.ardev.component'
+        minSdk rootProject.ext.minSdk
+        targetSdk rootProject.ext.targetSdk
+        
+    }
+
+	compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11
+    }
+	
+    lintOptions {
+        abortOnError false
+        disable "VectorPath",
+                "NestedWeights",
+                "ContentDescription",
+                "SmallSp"
+    }
+    
+	buildTypes {
+        release {
+ 			minifyEnabled false
+			shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+
+
+
+}

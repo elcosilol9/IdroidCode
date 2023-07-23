@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+<style name="Widget.IdroidCode.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="contentInsetStartWithNavigation">@dimen/abc_action_bar_content_inset_with_nav</item>
+    </style>
+
+    <style name="PreferenceThemeOverlay.IdroidCode">
+        <item name="preferenceCategoryTitleTextAppearance">?attr/textAppearanceBodyMedium</item>
+        <item name="singleLineTitle">false</item>
+    </style>
+
+
+    <style name="Preference.SwitchPreferenceCompat.M3" parent="Preference.SwitchPreferenceCompat.Material">
+        <item name="android:widgetLayout">@layout/preference_widget_material_switch</item>
+    </style>
+
+    <style name="ThemeOverlay.MaterialAlertDialog.NoRounded" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.NoRounded</item>
+
+    </style>
+
+    <style name="MaterialAlertDialog.NoRounded" parent="MaterialAlertDialog.Material3">
+        <item name="shapeAppearance">@style/NoRounded</item>
+        <item name="shapeAppearanceOverlay">@null</item>
+    </style>
+
+    <style name="MaterialTheme.AppBarOverlay"  parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+    <style  name="MaterialTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+
+   <style name="Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="NoRounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+
+    </style>
+    
+	<style name="TabLayoutTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+	</style>
+	
+	 <style name="BreadcrumbsView">
+        <item name="crumbsTextColor">?colorSecondary</item>
+        <item name="crumbsSelectedTextColor">?colorOnSurfaceVariant</item>
+        <item name="crumbsTextSize">15sp</item>
+        <item name="crumbsPadding">0dp</item>
+    </style>
+	
+    <style name="PopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_out</item>
+    </style>
+</resources>

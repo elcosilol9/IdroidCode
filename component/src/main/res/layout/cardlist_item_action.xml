@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/cardlist_baseline_half"
+    android:paddingStart="8dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/cl_action_icon"
+        android:layout_width="@dimen/cardlist_item_action_image_width"
+        android:layout_height="@dimen/cardlist_item_action_image_height"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/cardlist_baseline_half"
+        android:layout_marginStart="@dimen/cardlist_baseline"
+        android:adjustViewBounds="false"
+        app:tint="?colorOnSurfaceVariant"
+        android:contentDescription="@null"
+        android:cropToPadding="false"
+        android:scaleType="centerInside" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/cardlist_item_action_image_height"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="@dimen/cardlist_baseline"
+        android:layout_marginStart="@dimen/cardlist_baseline"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cl_action_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?colorOnSurface"
+            android:textAppearance="?attr/textAppearanceBody1"
+            tools:text="Version" />
+
+        <TextView
+            android:id="@+id/cl_action_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?colorOnSurfaceVariant"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:visibility="gone"
+            tools:text="Current Version Of App"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

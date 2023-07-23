@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/isp_shimmer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	app:shimmer_duration="2000"
+	app:shimmer_repeat_mode="reverse"
+	app:shimmer_auto_start="true"
+	app:shimmer_base_alpha="0.3"
+	app:shimmer_highlight_alpha="0.6"
+	app:shimmer_shape="linear">
+	
+<com.google.android.material.card.MaterialCardView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+ 	android:padding="8dp"
+    android:paddingStart="12dp"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginTop="8dp"
+    app:cardUseCompatPadding="false"
+    android:clickable="false"
+    android:focusable="false"
+    app:cardCornerRadius="8dp"
+    app:strokeWidth="0dp"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/isp_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="4dp"
+            app:cardBackgroundColor="@color/shimmer_color"
+      		app:cardCornerRadius="16dp"
+      		app:strokeWidth="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/isp_name"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="4dp"
+			 app:cardBackgroundColor="@color/shimmer_color"
+       		 app:cardCornerRadius="16dp"
+       		app:strokeWidth="0dp"
+            app:layout_constraintBottom_toTopOf="@id/isp_pkg_name"
+            app:layout_constraintStart_toEndOf="@id/isp_icon"
+            app:layout_constraintTop_toTopOf="@id/isp_icon" />
+            
+            
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/isp_pkg_name"
+            android:layout_width="300dp"
+            android:layout_height="16dp"
+             android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="4dp"
+            app:cardBackgroundColor="@color/shimmer_color"
+       		app:cardCornerRadius="16dp"
+            app:strokeWidth="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/isp_icon"
+            app:layout_constraintStart_toEndOf="@id/isp_icon"
+            app:layout_constraintTop_toBottomOf="@id/isp_name" />
+                       
+    	</androidx.constraintlayout.widget.ConstraintLayout>
+	</com.google.android.material.card.MaterialCardView>
+</com.facebook.shimmer.ShimmerFrameLayout>

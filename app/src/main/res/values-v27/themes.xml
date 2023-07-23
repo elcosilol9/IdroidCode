@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.V27.IdroidCode" parent="Base.Theme.IdroidCode">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.IdroidCode" parent="Base.V27.IdroidCode" />
+</resources>

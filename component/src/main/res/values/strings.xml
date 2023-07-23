@@ -1,0 +1,6 @@
+<resources>
+    <string name="dialog_title_select_color">Select color</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_choose">Choose</string>
+    <string name="empty_view_msg">No items</string>
+</resources>

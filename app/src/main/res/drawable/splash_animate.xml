@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selected"
+    android:oneshot="true">
+    <item
+        android:drawable="@drawable/ic_android_black_24dp"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_android_white_24dp"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_android_black_24dp"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_android_white_24dp"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_android_black_24dp"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/ic_android_white_24dp"
+        android:duration="200" />
+</animation-list>

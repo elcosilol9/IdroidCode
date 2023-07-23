@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrolling_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+<androidx.recyclerview.widget.RecyclerView
+				  android:id="@+id/template_recyclerview"
+				android:nestedScrollingEnabled="false"        
+            android:scrollbars="none"
+				android:paddingTop="?attr/actionBarSize"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"/>
+        
+
+   </androidx.core.widget.NestedScrollView>

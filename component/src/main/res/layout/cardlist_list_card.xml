@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_list_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/cardlist_baseline_half"
+    android:layout_marginTop="@dimen/cardlist_baseline_half"
+    android:paddingVertical="@dimen/cardlist_baseline"
+    android:paddingHorizontal="@dimen/cardlist_baseline_half"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cl_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/cardlist_baseline"
+            android:layout_marginTop="@dimen/cardlist_baseline"
+            android:layout_marginBottom="@dimen/cardlist_baseline_half"
+            android:textAppearance="?attr/textAppearanceSubtitle2"
+            android:textColor="?colorOnSurface"
+            tools:text="Author" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cl_list_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:clipToPadding="true"
+            android:paddingVertical="@dimen/cardlist_baseline_half"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

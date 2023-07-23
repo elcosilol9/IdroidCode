@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="entries_theme">
+        <item>@string/follow_system</item>
+        <item>@string/theme_light</item>
+        <item>@string/theme_dark</item>
+    </string-array>
+
+    <integer-array name="values_theme">
+        <item>-1</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+
+
+</resources>
